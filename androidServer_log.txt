@@ -5,3 +5,817 @@ javax.sip.STACK_NAME= android sip
 javax.sip.ROUTER_PATH= null
 javax.sip.OUTBOUND_PROXY= null
 -->
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 192.168.15.1
+javax.sip.STACK_NAME= android sip
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 192.168.15.1
+javax.sip.STACK_NAME= android sip
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 192.168.15.1
+javax.sip.STACK_NAME= android sip
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 192.168.15.1
+javax.sip.STACK_NAME= android sip
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 10.128.194.130
+javax.sip.STACK_NAME= android sip
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->
+<message
+from="10.28.227.81:5090" 
+to="10.128.194.130:5060" 
+time="1499848249665"
+isSender="false" 
+transactionId="z9hg4bk-383138-a843c1825f1aa45ee98ae73a48f0dbab" 
+callId="dede3488cbcc4c506cfcb07fff41ae66@10.28.227.81" 
+firstLine="REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0" 
+>
+<![CDATA[REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0
+Call-ID: dede3488cbcc4c506cfcb07fff41ae66@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-383138-a843c1825f1aa45ee98ae73a48f0dbab
+Max-Forwards: 70
+Content-Type: text/plain
+Content-Length: 7
+
+]]>
+</message>
+
+<message
+from="10.128.194.130:5060" 
+to="10.28.227.81:5090" 
+time="1499848249784"
+isSender="true" 
+transactionId="z9hg4bk-383138-a843c1825f1aa45ee98ae73a48f0dbab" 
+callId="dede3488cbcc4c506cfcb07fff41ae66@10.28.227.81" 
+firstLine="SIP/2.0 403 Forbidden" 
+>
+<![CDATA[SIP/2.0 403 Forbidden
+Call-ID: dede3488cbcc4c506cfcb07fff41ae66@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-383138-a843c1825f1aa45ee98ae73a48f0dbab
+Content-Type: text/plain
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 10.128.194.130
+javax.sip.STACK_NAME= android sip
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 10.128.194.130
+javax.sip.STACK_NAME= android sip
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 10.128.194.130
+javax.sip.STACK_NAME= android sip
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->
+<message
+from="10.28.227.81:5090" 
+to="10.128.194.130:5060" 
+time="1499848339979"
+isSender="false" 
+transactionId="z9hg4bk-353333-3ccb74aa8542f4b87d8ac3c14b90f221" 
+callId="2b7c01f7beff4ede11df9dfde21a5d4f@10.28.227.81" 
+firstLine="REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0" 
+>
+<![CDATA[REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0
+Call-ID: 2b7c01f7beff4ede11df9dfde21a5d4f@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-353333-3ccb74aa8542f4b87d8ac3c14b90f221
+Max-Forwards: 70
+Content-Type: text/plain
+Content-Length: 7
+
+]]>
+</message>
+
+<message
+from="10.128.194.130:5060" 
+to="10.28.227.81:5090" 
+time="1499848340071"
+isSender="true" 
+transactionId="z9hg4bk-353333-3ccb74aa8542f4b87d8ac3c14b90f221" 
+callId="2b7c01f7beff4ede11df9dfde21a5d4f@10.28.227.81" 
+firstLine="SIP/2.0 403 Forbidden" 
+>
+<![CDATA[SIP/2.0 403 Forbidden
+Call-ID: 2b7c01f7beff4ede11df9dfde21a5d4f@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-353333-3ccb74aa8542f4b87d8ac3c14b90f221
+Content-Type: text/plain
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 10.128.194.130
+javax.sip.STACK_NAME= android sip
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->
+<message
+from="10.28.227.81:5090" 
+to="10.128.194.130:5060" 
+time="1499848608083"
+isSender="false" 
+transactionId="z9hg4bk-3530-7df698abad3be79a3564bb414b4aeb92" 
+callId="2ceaf8b32076cfc6c0fe4f29993ac439@10.28.227.81" 
+firstLine="REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0" 
+>
+<![CDATA[REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0
+Call-ID: 2ceaf8b32076cfc6c0fe4f29993ac439@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-3530-7df698abad3be79a3564bb414b4aeb92
+Max-Forwards: 70
+Content-Type: text/plain
+Content-Length: 7
+
+]]>
+</message>
+
+<message
+from="10.128.194.130:5060" 
+to="10.28.227.81:5090" 
+time="1499848608177"
+isSender="true" 
+transactionId="z9hg4bk-3530-7df698abad3be79a3564bb414b4aeb92" 
+callId="2ceaf8b32076cfc6c0fe4f29993ac439@10.28.227.81" 
+firstLine="SIP/2.0 403 Forbidden" 
+>
+<![CDATA[SIP/2.0 403 Forbidden
+Call-ID: 2ceaf8b32076cfc6c0fe4f29993ac439@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-3530-7df698abad3be79a3564bb414b4aeb92
+Content-Type: text/plain
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="10.28.227.81:5090" 
+to="10.128.194.130:5060" 
+time="1499848608580"
+isSender="false" 
+transactionId="z9hg4bk-3530-7df698abad3be79a3564bb414b4aeb92" 
+callId="2ceaf8b32076cfc6c0fe4f29993ac439@10.28.227.81" 
+firstLine="REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0" 
+>
+<![CDATA[REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0
+Call-ID: 2ceaf8b32076cfc6c0fe4f29993ac439@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-3530-7df698abad3be79a3564bb414b4aeb92
+Max-Forwards: 70
+Content-Type: text/plain
+Content-Length: 7
+
+]]>
+</message>
+
+<message
+from="10.128.194.130:5060" 
+to="10.28.227.81:5090" 
+time="1499848608583"
+isSender="true" 
+transactionId="z9hg4bk-3530-7df698abad3be79a3564bb414b4aeb92" 
+callId="2ceaf8b32076cfc6c0fe4f29993ac439@10.28.227.81" 
+firstLine="SIP/2.0 403 Forbidden" 
+>
+<![CDATA[SIP/2.0 403 Forbidden
+Call-ID: 2ceaf8b32076cfc6c0fe4f29993ac439@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-3530-7df698abad3be79a3564bb414b4aeb92
+Content-Type: text/plain
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="10.28.227.81:5090" 
+to="10.128.194.130:5060" 
+time="1499848609588"
+isSender="false" 
+transactionId="z9hg4bk-3530-7df698abad3be79a3564bb414b4aeb92" 
+callId="2ceaf8b32076cfc6c0fe4f29993ac439@10.28.227.81" 
+firstLine="REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0" 
+>
+<![CDATA[REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0
+Call-ID: 2ceaf8b32076cfc6c0fe4f29993ac439@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-3530-7df698abad3be79a3564bb414b4aeb92
+Max-Forwards: 70
+Content-Type: text/plain
+Content-Length: 7
+
+]]>
+</message>
+
+<message
+from="10.128.194.130:5060" 
+to="10.28.227.81:5090" 
+time="1499848609589"
+isSender="true" 
+transactionId="z9hg4bk-3530-7df698abad3be79a3564bb414b4aeb92" 
+callId="2ceaf8b32076cfc6c0fe4f29993ac439@10.28.227.81" 
+firstLine="SIP/2.0 403 Forbidden" 
+>
+<![CDATA[SIP/2.0 403 Forbidden
+Call-ID: 2ceaf8b32076cfc6c0fe4f29993ac439@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-3530-7df698abad3be79a3564bb414b4aeb92
+Content-Type: text/plain
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="10.28.227.81:5090" 
+to="10.128.194.130:5060" 
+time="1499848611584"
+isSender="false" 
+transactionId="z9hg4bk-3530-7df698abad3be79a3564bb414b4aeb92" 
+callId="2ceaf8b32076cfc6c0fe4f29993ac439@10.28.227.81" 
+firstLine="REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0" 
+>
+<![CDATA[REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0
+Call-ID: 2ceaf8b32076cfc6c0fe4f29993ac439@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-3530-7df698abad3be79a3564bb414b4aeb92
+Max-Forwards: 70
+Content-Type: text/plain
+Content-Length: 7
+
+]]>
+</message>
+
+<message
+from="10.128.194.130:5060" 
+to="10.28.227.81:5090" 
+time="1499848611586"
+isSender="true" 
+transactionId="z9hg4bk-3530-7df698abad3be79a3564bb414b4aeb92" 
+callId="2ceaf8b32076cfc6c0fe4f29993ac439@10.28.227.81" 
+firstLine="SIP/2.0 403 Forbidden" 
+>
+<![CDATA[SIP/2.0 403 Forbidden
+Call-ID: 2ceaf8b32076cfc6c0fe4f29993ac439@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-3530-7df698abad3be79a3564bb414b4aeb92
+Content-Type: text/plain
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 10.128.194.130
+javax.sip.STACK_NAME= android sip
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->
+<message
+from="10.28.227.81:5090" 
+to="10.128.194.130:5060" 
+time="1499848662518"
+isSender="false" 
+transactionId="z9hg4bk-313938-2a4bae59d7c1ce644d855b9da74a746e" 
+callId="82ba6424317a378111de53f485723dc7@10.28.227.81" 
+firstLine="REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0" 
+>
+<![CDATA[REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0
+Call-ID: 82ba6424317a378111de53f485723dc7@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-313938-2a4bae59d7c1ce644d855b9da74a746e
+Max-Forwards: 70
+Content-Type: text/plain
+Content-Length: 7
+
+]]>
+</message>
+
+<message
+from="10.128.194.130:5060" 
+to="10.28.227.81:5090" 
+time="1499848662615"
+isSender="true" 
+transactionId="z9hg4bk-313938-2a4bae59d7c1ce644d855b9da74a746e" 
+callId="82ba6424317a378111de53f485723dc7@10.28.227.81" 
+firstLine="SIP/2.0 403 Forbidden" 
+>
+<![CDATA[SIP/2.0 403 Forbidden
+Call-ID: 82ba6424317a378111de53f485723dc7@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-313938-2a4bae59d7c1ce644d855b9da74a746e
+Content-Type: text/plain
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 10.128.194.130
+javax.sip.STACK_NAME= android sip
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->
+<message
+from="10.28.227.81:5090" 
+to="10.128.194.130:5060" 
+time="1499848702543"
+isSender="false" 
+transactionId="z9hg4bk-393731-48e718f79b61470286868ef109dae45e" 
+callId="9928d3be014b65b107842a75b555c6ee@10.28.227.81" 
+firstLine="REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0" 
+>
+<![CDATA[REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0
+Call-ID: 9928d3be014b65b107842a75b555c6ee@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-393731-48e718f79b61470286868ef109dae45e
+Max-Forwards: 70
+Content-Type: text/plain
+Content-Length: 7
+
+]]>
+</message>
+
+<message
+from="10.128.194.130:5060" 
+to="10.28.227.81:5090" 
+time="1499848702558"
+isSender="true" 
+transactionId="z9hg4bk-393731-48e718f79b61470286868ef109dae45e" 
+callId="9928d3be014b65b107842a75b555c6ee@10.28.227.81" 
+firstLine="SIP/2.0 403 Forbidden" 
+>
+<![CDATA[SIP/2.0 403 Forbidden
+Call-ID: 9928d3be014b65b107842a75b555c6ee@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-393731-48e718f79b61470286868ef109dae45e
+Content-Type: text/plain
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="10.28.227.81:5090" 
+to="10.128.194.130:5060" 
+time="1499848717889"
+isSender="false" 
+transactionId="z9hg4bk-363137-22f2a123de6a76c2d91f51a13ec4ff2b" 
+callId="27b5925d1206f0b9f4c1e8d8cb74b7da@10.28.227.81" 
+firstLine="REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0" 
+>
+<![CDATA[REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0
+Call-ID: 27b5925d1206f0b9f4c1e8d8cb74b7da@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-363137-22f2a123de6a76c2d91f51a13ec4ff2b
+Max-Forwards: 70
+Content-Type: text/plain
+Content-Length: 7
+
+]]>
+</message>
+
+<message
+from="10.128.194.130:5060" 
+to="10.28.227.81:5090" 
+time="1499848717905"
+isSender="true" 
+transactionId="z9hg4bk-363137-22f2a123de6a76c2d91f51a13ec4ff2b" 
+callId="27b5925d1206f0b9f4c1e8d8cb74b7da@10.28.227.81" 
+firstLine="SIP/2.0 403 Forbidden" 
+>
+<![CDATA[SIP/2.0 403 Forbidden
+Call-ID: 27b5925d1206f0b9f4c1e8d8cb74b7da@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-363137-22f2a123de6a76c2d91f51a13ec4ff2b
+Content-Type: text/plain
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 10.128.194.130
+javax.sip.STACK_NAME= android sip
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->
+<message
+from="10.28.227.81:5090" 
+to="10.128.194.130:5060" 
+time="1499848735800"
+isSender="false" 
+transactionId="z9hg4bk-383636-92c095137e056bae0e3b6732777f23be" 
+callId="baa0bc5081004d2fd1a181626d7bcdb4@10.28.227.81" 
+firstLine="REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0" 
+>
+<![CDATA[REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0
+Call-ID: baa0bc5081004d2fd1a181626d7bcdb4@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-383636-92c095137e056bae0e3b6732777f23be
+Max-Forwards: 70
+Content-Type: text/plain
+Content-Length: 7
+
+]]>
+</message>
+
+<message
+from="10.128.194.130:5060" 
+to="10.28.227.81:5090" 
+time="1499848735912"
+isSender="true" 
+transactionId="z9hg4bk-383636-92c095137e056bae0e3b6732777f23be" 
+callId="baa0bc5081004d2fd1a181626d7bcdb4@10.28.227.81" 
+firstLine="SIP/2.0 403 Forbidden" 
+>
+<![CDATA[SIP/2.0 403 Forbidden
+Call-ID: baa0bc5081004d2fd1a181626d7bcdb4@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-383636-92c095137e056bae0e3b6732777f23be
+Content-Type: text/plain
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 10.128.194.130
+javax.sip.STACK_NAME= android sip
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->
+<message
+from="10.28.227.81:5090" 
+to="10.128.194.130:5060" 
+time="1499848766745"
+isSender="false" 
+transactionId="z9hg4bk-333236-77cd2119f6637f10aa59a6841d390291" 
+callId="476c90f27c90cee0a1fa419584772a55@10.28.227.81" 
+firstLine="REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0" 
+>
+<![CDATA[REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0
+Call-ID: 476c90f27c90cee0a1fa419584772a55@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-333236-77cd2119f6637f10aa59a6841d390291
+Max-Forwards: 70
+Content-Type: text/plain
+Content-Length: 7
+
+]]>
+</message>
+
+<message
+from="10.128.194.130:5060" 
+to="10.28.227.81:5090" 
+time="1499848766858"
+isSender="true" 
+transactionId="z9hg4bk-333236-77cd2119f6637f10aa59a6841d390291" 
+callId="476c90f27c90cee0a1fa419584772a55@10.28.227.81" 
+firstLine="SIP/2.0 403 Forbidden" 
+>
+<![CDATA[SIP/2.0 403 Forbidden
+Call-ID: 476c90f27c90cee0a1fa419584772a55@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-333236-77cd2119f6637f10aa59a6841d390291
+Content-Type: text/plain
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 10.128.194.130
+javax.sip.STACK_NAME= android sip
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->
+<message
+from="10.28.227.81:5090" 
+to="10.128.194.130:5060" 
+time="1499848789474"
+isSender="false" 
+transactionId="z9hg4bk-3936-2111d5552e37208d856158a642b8d844" 
+callId="9c1773684b961a68f14f82a255709af0@10.28.227.81" 
+firstLine="REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0" 
+>
+<![CDATA[REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0
+Call-ID: 9c1773684b961a68f14f82a255709af0@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-3936-2111d5552e37208d856158a642b8d844
+Max-Forwards: 70
+Content-Type: text/plain
+Content-Length: 7
+
+]]>
+</message>
+
+<message
+from="10.128.194.130:5060" 
+to="10.28.227.81:5090" 
+time="1499848789581"
+isSender="true" 
+transactionId="z9hg4bk-3936-2111d5552e37208d856158a642b8d844" 
+callId="9c1773684b961a68f14f82a255709af0@10.28.227.81" 
+firstLine="SIP/2.0 403 Forbidden" 
+>
+<![CDATA[SIP/2.0 403 Forbidden
+Call-ID: 9c1773684b961a68f14f82a255709af0@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-3936-2111d5552e37208d856158a642b8d844
+Content-Type: text/plain
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 10.128.194.130
+javax.sip.STACK_NAME= android sip
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->
+<message
+from="10.28.227.81:5090" 
+to="10.128.194.130:5060" 
+time="1499848894041"
+isSender="false" 
+transactionId="z9hg4bk-3230-1256b2b3cbff171b30b299f0e5fcb838" 
+callId="634914e985b0e9bcf5b4ba48131b9e04@10.28.227.81" 
+firstLine="REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0" 
+>
+<![CDATA[REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0
+Call-ID: 634914e985b0e9bcf5b4ba48131b9e04@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-3230-1256b2b3cbff171b30b299f0e5fcb838
+Max-Forwards: 70
+Content-Type: text/plain
+Content-Length: 7
+
+]]>
+</message>
+
+<message
+from="10.128.194.130:5060" 
+to="10.28.227.81:5090" 
+time="1499848894135"
+isSender="true" 
+transactionId="z9hg4bk-3230-1256b2b3cbff171b30b299f0e5fcb838" 
+callId="634914e985b0e9bcf5b4ba48131b9e04@10.28.227.81" 
+firstLine="SIP/2.0 403 Forbidden" 
+>
+<![CDATA[SIP/2.0 403 Forbidden
+Call-ID: 634914e985b0e9bcf5b4ba48131b9e04@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-3230-1256b2b3cbff171b30b299f0e5fcb838
+Content-Type: text/plain
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 10.128.194.130
+javax.sip.STACK_NAME= android sip
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->
+<message
+from="10.28.227.81:5090" 
+to="10.128.194.130:5060" 
+time="1499848947874"
+isSender="false" 
+transactionId="z9hg4bk-363239-97c7d7e01dcc0f2200bc57a345f07ae3" 
+callId="b28543a6766da35411aaa87b9dd4a3cc@10.28.227.81" 
+firstLine="REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0" 
+>
+<![CDATA[REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0
+Call-ID: b28543a6766da35411aaa87b9dd4a3cc@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-363239-97c7d7e01dcc0f2200bc57a345f07ae3
+Max-Forwards: 70
+Content-Type: text/plain
+Content-Length: 7
+
+]]>
+</message>
+
+<message
+from="10.128.194.130:5060" 
+to="10.28.227.81:5090" 
+time="1499848947999"
+isSender="true" 
+transactionId="z9hg4bk-363239-97c7d7e01dcc0f2200bc57a345f07ae3" 
+callId="b28543a6766da35411aaa87b9dd4a3cc@10.28.227.81" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+Call-ID: b28543a6766da35411aaa87b9dd4a3cc@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-363239-97c7d7e01dcc0f2200bc57a345f07ae3
+Content-Type: text/plain
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="10.28.227.81:5090" 
+to="10.128.194.130:5060" 
+time="1499849057049"
+isSender="false" 
+transactionId="z9hg4bk-343439-818c64bb46eb372afbb9984d95a341a0" 
+callId="40073ee02c30f6abb823becf509f8e21@10.28.227.81" 
+firstLine="REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0" 
+>
+<![CDATA[REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0
+Call-ID: 40073ee02c30f6abb823becf509f8e21@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-343439-818c64bb46eb372afbb9984d95a341a0
+Max-Forwards: 70
+Content-Type: text/plain
+Content-Length: 7
+
+]]>
+</message>
+
+<message
+from="10.128.194.130:5060" 
+to="10.28.227.81:5090" 
+time="1499849057109"
+isSender="true" 
+transactionId="z9hg4bk-343439-818c64bb46eb372afbb9984d95a341a0" 
+callId="40073ee02c30f6abb823becf509f8e21@10.28.227.81" 
+firstLine="SIP/2.0 403 Forbidden" 
+>
+<![CDATA[SIP/2.0 403 Forbidden
+Call-ID: 40073ee02c30f6abb823becf509f8e21@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-343439-818c64bb46eb372afbb9984d95a341a0
+Content-Type: text/plain
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="10.28.227.81:5090" 
+to="10.128.194.130:5060" 
+time="1499849089043"
+isSender="false" 
+transactionId="z9hg4bk-393036-9a197d8b9a22af1f51bff3bd28c15fea" 
+callId="82b455741dc12cf841c2a4937f59cb49@10.28.227.81" 
+firstLine="REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0" 
+>
+<![CDATA[REGISTER sip:10.128.194.130:5060@10.128.194.130:5060;transport=udp SIP/2.0
+Call-ID: 82b455741dc12cf841c2a4937f59cb49@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-393036-9a197d8b9a22af1f51bff3bd28c15fea
+Max-Forwards: 70
+Content-Type: text/plain
+Content-Length: 7
+
+]]>
+</message>
+
+<message
+from="10.128.194.130:5060" 
+to="10.28.227.81:5090" 
+time="1499849089111"
+isSender="true" 
+transactionId="z9hg4bk-393036-9a197d8b9a22af1f51bff3bd28c15fea" 
+callId="82b455741dc12cf841c2a4937f59cb49@10.28.227.81" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+Call-ID: 82b455741dc12cf841c2a4937f59cb49@10.28.227.81
+CSeq: 1 REGISTER
+From: "ke" <sip:ke@10.28.227.81:5090>;tag=textserver
+To: "admin" <sip:admin@10.128.194.130:5060>;tag=toAddress
+Via: SIP/2.0/UDP 10.28.227.81:5090;branch=z9hG4bK-393036-9a197d8b9a22af1f51bff3bd28c15fea
+Content-Type: text/plain
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 10.128.194.130
+javax.sip.STACK_NAME= android sip
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= 10.209.4.207
+javax.sip.STACK_NAME= android sip
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= null
+-->

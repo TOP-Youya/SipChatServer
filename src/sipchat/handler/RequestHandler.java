@@ -1,7 +1,6 @@
 package sipchat.handler;
 
-import org.omg.CORBA.NO_IMPLEMENT;
-import sipchat.dao.GroupEvent;
+
 import sipchat.dao.UserEvent;
 import sipchat.manager.CacheManager;
 import sipchat.manager.HeaderMaker;
@@ -48,9 +47,23 @@ public class RequestHandler {
     public void onRegister(Request request) throws Throwable {
         String content = new String(request.getRawContent());
         FromHeader fromHeader = (FromHeader) request.getHeader(FromHeader.NAME);
+
+        System.err.println(fromHeader.toString());
+
         String username = fromHeader.getAddress().getDisplayName();
+
+        System.err.println(username);
+
         String uri =  fromHeader.getAddress().getURI().toString();
-        String address = uri.substring(uri.indexOf('@'),uri.lastIndexOf(':'));
+
+        System.err.println(uri);
+
+        System.err.println(uri.indexOf('@'));
+        System.err.println(uri.lastIndexOf(':'));
+
+        String address = uri.substring(uri.indexOf('@') + 1,uri.lastIndexOf(':'));
+
+        System.err.println(address);
 
         int state =  UserEvent.addUser(username,content,address);
         if(state != 0) {

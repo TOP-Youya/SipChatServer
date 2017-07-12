@@ -31,8 +31,8 @@ public class RunServer {
     }
 
     public static void main(String[] args) throws UnknownHostException {
-        //RunServer server = new RunServer();
-        //server.start();
+        RunServer server = new RunServer();
+        server.start();
         System.out.println(InetAddress.getLocalHost().getHostAddress());
     }
 }

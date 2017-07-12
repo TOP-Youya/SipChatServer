@@ -47,6 +47,9 @@ public class ServerSipListener implements SipListener {
     public void processRequest(RequestEvent requestEvent) {
         Request request = requestEvent.getRequest();
         String method = request.getMethod();
+
+        System.err.println(request.toString());
+
         switch (method) {
             case Request.REGISTER:
                 try {

@@ -20,9 +20,9 @@ public class SimpleOperator {
     public synchronized static Connection getConnection() {
         if(connection == null) {
             String driver = "com.mysql.jdbc.Driver";
-            String url = "jdbc:mysql://localhost:3306/sipchatroom";
+            String url = "jdbc:mysql://localhost:3306/sipchatroom?useSSL=false";
             String username = "root";
-            String password = "root";
+            String password = "1230";
             try {
                 Class.forName(driver);
                 connection = DriverManager.getConnection(url,username,password);
@@ -40,7 +40,7 @@ public class SimpleOperator {
         try {
             preparedStatement = connection.prepareStatement(sql);
             for(int i = 0;i < params.size();++i) {
-                preparedStatement.setString(i,params.get(i));
+                preparedStatement.setString(i + 1,params.get(i));
             }
             result = preparedStatement.executeUpdate();
             preparedStatement.close();

@@ -14,6 +14,7 @@ import java.util.List;
 public class UserEvent {
 
     public static int addUser(String userName,String password,String ipAddress){
+        System.err.println("into adduser");
         String sql="insert into user (userName,password,ipAddress) values(?,?,?)";   //SQL语句
         List<String> list = new LinkedList<>();
         list.add(userName);
