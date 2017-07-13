@@ -65,28 +65,33 @@ public class RequestHandler {
         String address = uri.substring(uri.indexOf('@') + 1,uri.lastIndexOf(':'));
 
         System.err.println(address);
-
+        if(cacheManager.hasUser(username)) {
+            sendResponse(request,Response.FORBIDDEN,"");
+            return;
+        }
         int state =  UserEvent.addUser(username,content,address);
         if(state != 0) {
+            cacheManager.setUserChanged(true);
             sendResponse(request,Response.OK,"");
         } else {
             sendResponse(request,Response.FORBIDDEN,"");
         }
     }
 
-    public void onSubscribe(Request request) throws Throwable {
+    public void onInfo(Request request) throws Throwable {
         String content = new String(request.getRawContent());
         String address = UserEvent.getIpAddress(content);
         FromHeader fromHeader = (FromHeader) request.getHeader(FromHeader.NAME);
         String owner = fromHeader.getAddress().getDisplayName();
+        if(!cacheManager.hasFriend(owner,content)) {
+            FriendEvent.addFriend(owner, content);
+            FriendEvent.addFriend(content, owner);
+            cacheManager.setFriendChanged(true);
+        }
+        sendResponse(request,Response.OK,content + "#" + address);
 
-        FriendEvent.addFriend(owner,content);
-        FriendEvent.addFriend(content,owner);
-        cacheManager.setFriendChanged(true);
-        sendResponse(request,Response.OK,"");
-
-        Request notifyRequest = makeNotifyMessage(fromHeader.getAddress().getURI().toString(),content + "#" + address);
-        holder.addRequest(notifyRequest);
+        //Request notifyRequest = makeNotifyMessage(fromHeader.getAddress().getURI().toString(),content + "#" + address);
+        //holder.addRequest(notifyRequest);
     }
 
     public void onPublish(Request request) throws Throwable {
@@ -201,11 +206,17 @@ public class RequestHandler {
 
     private void sendResponse(Request request, final int state, final String message) throws Throwable {
         Response response = sipManager.getMessageFactory().createResponse(state,request);
-
+        if(request.getMethod().equals(Request.SUBSCRIBE)) {
+            ExpiresHeader expiresHeader = sipManager.getHeaderFactory().createExpiresHeader(3400);
+            response.addHeader(expiresHeader);
+            SubscriptionStateHeader stateHeader = sipManager.getHeaderFactory().createSubscriptionStateHeader("hello");
+            response.addHeader(stateHeader);
+        }
         ContentTypeHeader contentTypeHeader = sipManager.getHeaderFactory().createContentTypeHeader("text","plain");
         response.setContent(message,contentTypeHeader);
 
         ServerTransaction transaction = sipManager.getSipProvider().getNewServerTransaction(request);
+        System.err.println(response.toString());
         transaction.sendResponse(response);
     }
 

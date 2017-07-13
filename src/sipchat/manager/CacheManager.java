@@ -43,6 +43,28 @@ public class CacheManager {
     }
 
 
+    public boolean hasUser(String username) {
+        for (User each : users) {
+            if(each.getUsername().equals(username)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean hasFriend(String owner,String frinedName) {
+        if(isFriendChanged) {
+            friends = FriendEvent.getAllFriendList();
+            isFriendChanged = !isFriendChanged;
+        }
+        for (Friend each : friends) {
+            if(each.getOwner().equals(owner) && each.getFriendName().equals(frinedName)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public List<String> getAllFriends() {
         List<String> result = new ArrayList<>();
         if(isUserChanged) {
@@ -51,6 +73,7 @@ public class CacheManager {
         }
         for(User each : users) {
             result.add(each.getUsername());
+            result.add(each.getIpAddress());
         }
         return result;
     }
@@ -78,6 +101,7 @@ public class CacheManager {
         for(Friend each : friends) {
             if(each.getOwner().equals(owner)) {
                 result.add(each.getFriendName());
+                result.add(getIPAddress(each.getFriendName()));
             }
         }
         return result;
@@ -183,7 +207,7 @@ public class CacheManager {
                 return each.getIpAddress();
             }
         }
-        return null;
+        return "";
     }
 
     public void setFriendChanged(boolean friendChanged) {

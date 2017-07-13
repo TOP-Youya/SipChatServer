@@ -58,9 +58,9 @@ public class ServerSipListener implements SipListener {
                     throwable.printStackTrace();
                 }
                 break;
-            case Request.SUBSCRIBE:
+            case Request.INFO:
                 try {
-                    requestHandler.onSubscribe(request);
+                    requestHandler.onInfo(request);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                 }

@@ -89,7 +89,7 @@ public class MessageImpl implements MessageHandler {
         String groupName = rawMessage.substring(0,rawMessage.indexOf('#'));
         String message = State.GROUP_MESSAGE + rawMessage.substring(rawMessage.indexOf('#') + 1);
         List<String> list = cacheManager.getGroupMemberSipAddress(groupName);
-        addRequest(header,list,message);
+        addRequest(header,list,State.GROUP_MESSAGE + rawMessage);
         return "true";
     }
 
@@ -119,7 +119,7 @@ public class MessageImpl implements MessageHandler {
         int state = GroupEvent.addGroupMember(groupName,memberName);
         if(state != 0) {
             cacheManager.setGroupMembersChanged(true);
-            addRequest(username,list,rawMessage);
+            addRequest(username,list,State.JOIN_GROUP + rawMessage);
         } else {
             return "false";
         }
@@ -140,7 +140,7 @@ public class MessageImpl implements MessageHandler {
         int state = GroupEvent.deleteMember(groupName,memberName);
         if(state != 0) {
             cacheManager.setGroupMembersChanged(true);
-            addRequest(username,list,rawMessage);
+            addRequest(username,list,State.EXIT_GROUP + rawMessage);
         } else {
             return "false";
         }
