@@ -2,6 +2,7 @@ package sipchat.handler.impl;
 
 import sipchat.dao.GroupEvent;
 import sipchat.dao.UserEvent;
+import sipchat.enity.User;
 import sipchat.handler.MessageHandler;
 import sipchat.manager.*;
 import sipchat.state.State;
@@ -87,7 +88,6 @@ public class MessageImpl implements MessageHandler {
             throw new NullPointerException();
         }
         String groupName = rawMessage.substring(0,rawMessage.indexOf('#'));
-        String message = State.GROUP_MESSAGE + rawMessage.substring(rawMessage.indexOf('#') + 1);
         List<String> list = cacheManager.getGroupMemberSipAddress(groupName);
         addRequest(header,list,State.GROUP_MESSAGE + rawMessage);
         return "true";
@@ -110,12 +110,13 @@ public class MessageImpl implements MessageHandler {
         if(rawMessage == null || rawMessage.equals("")) {
             throw new NullPointerException();
         }
-        rawMessage = State.JOIN_GROUP + rawMessage;
         String groupName = rawMessage.substring(0,rawMessage.indexOf('#'));
         String memberName = rawMessage.substring(rawMessage.indexOf('#') + 1);
 
         List<String> list = cacheManager.getGroupMemberSipAddress(groupName);
-
+        if(cacheManager.hasGroupMember(groupName,memberName)) {
+            return "false";
+        }
         int state = GroupEvent.addGroupMember(groupName,memberName);
         if(state != 0) {
             cacheManager.setGroupMembersChanged(true);
@@ -165,11 +166,13 @@ public class MessageImpl implements MessageHandler {
     }
 
     @Override
-    public String onLogin(String displayName, String rawMessage) {
+    public String onLogin(String displayName, String rawMessage,String ipAddress) {
         if(rawMessage == null || rawMessage.equals("")) {
             throw new NullPointerException();
         }
         if(cacheManager.matchPassword(displayName,rawMessage)) {
+            UserEvent.updateIPAddress(displayName,ipAddress);
+            cacheManager.setUserChanged(true);
             return "true";
         }
         return "false";
@@ -204,10 +207,14 @@ public class MessageImpl implements MessageHandler {
 
     private void addRequest(FromHeader fromHeader,List<String> list,String rawMessage) {
         Request request;
+        String toName;
         for(String each : list) {
             try {
-                request = makeGroupMessage(fromHeader,each,rawMessage);
-                holder.addRequest(request);
+                toName = each.substring(each.indexOf(':') + 1,each.indexOf('@'));
+                if(!fromHeader.getAddress().getDisplayName().equals(toName)) {
+                    request = makeGroupMessage(fromHeader, each, rawMessage);
+                    holder.addRequest(request);
+                }
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
             }

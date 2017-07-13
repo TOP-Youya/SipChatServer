@@ -86,7 +86,7 @@ public class CacheManager {
         }
         for(GroupMember each : groupMembers) {
             if(!result.contains(each.getGroupName())) {
-                result.add(each.getMemberName());
+                result.add(each.getGroupName());
             }
         }
         return result;
@@ -138,6 +138,22 @@ public class CacheManager {
         return result;
     }
 
+    public boolean hasGroupMember(String groupName,String username) {
+        if(isGroupMembersChanged) {
+            groupMembers = GroupEvent.getAllGroupMembers();
+            users = UserEvent.getAllUser();
+            isGroupMembersChanged = false;
+        }
+
+        for(GroupMember each : groupMembers) {
+            if(each.getGroupName().equals(groupName) &&
+                    each.getMemberName().equals(username)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public List<String> getGroupMemberSipAddress(String groupName) {
         List<String> result = new ArrayList<>();
         if(isGroupMembersChanged || isUserChanged) {
@@ -148,7 +164,7 @@ public class CacheManager {
         }
 
         for(GroupMember each : groupMembers) {
-            if(each.getMemberName().equals(groupName)) {
+            if(each.getGroupName().equals(groupName)) {
                 for(User user : users) {
                     if(user.getUsername().equals(each.getMemberName())) {
                         result.add("sip:" + each.getMemberName() + "@" + user.getIpAddress() + ":5060");

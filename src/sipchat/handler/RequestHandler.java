@@ -126,6 +126,8 @@ public class RequestHandler {
 
         FromHeader fromHeader = (FromHeader) request.getHeader(FromHeader.NAME);
 
+        String sipAddress = fromHeader.getAddress().getURI().toString();
+        String ipAddress = sipAddress.substring(sipAddress.indexOf('@') + 1,sipAddress.lastIndexOf(':'));
         String result = "";
         switch (type) {
             case State.GET_FRIEND_LIST:
@@ -160,10 +162,11 @@ public class RequestHandler {
                 break;
             case State.JOIN_GROUP:
                 result = messageHandler.onJoinGroup(fromHeader,rawMessage);
+                String groupName = rawMessage.substring(0,rawMessage.indexOf('#'));
                 if(result.equals("true")) {
-                    sendResponse(request,Response.OK,"");
+                    sendResponse(request,Response.OK,groupName);
                 } else {
-                    sendResponse(request,Response.FORBIDDEN,"");
+                    sendResponse(request,Response.FORBIDDEN,groupName);
                 }
                 break;
             case State.EXIT_GROUP:
@@ -184,7 +187,7 @@ public class RequestHandler {
                 break;
             case State.LOGIN:
                 System.err.println(rawMessage);
-                result = messageHandler.onLogin(fromHeader.getAddress().getDisplayName(),rawMessage);
+                result = messageHandler.onLogin(fromHeader.getAddress().getDisplayName(),rawMessage,ipAddress);
                 if(result.equals("true")) {
                     sendResponse(request,Response.OK,"");
                 } else {
@@ -198,6 +201,7 @@ public class RequestHandler {
                 break;
             case State.ALL_GROUP:
                 result = messageHandler.onAllGroups();
+                System.err.println("---------" + result);
                 sendResponse(request,Response.OK,result);
                 break;
         }

@@ -1,6 +1,7 @@
 package sipchat.dao;
 
 import sipchat.enity.GroupMember;
+import sipchat.manager.CacheManager;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -18,6 +19,7 @@ public class GroupEvent {
     public static int addGroupMember(String groupName,String memberName) {
         String sql = "insert into groupmember (groupName,memberName) values(?,?)";
         List<String> list = new ArrayList<>();
+        System.err.println("222222" + groupName);
         list.add(groupName);
         list.add(memberName);
         return SimpleOperator.executeINT(sql,list);
@@ -32,7 +34,7 @@ public class GroupEvent {
             pstmt = conn.prepareStatement(sql);
             ResultSet rs = pstmt.executeQuery();
             while (rs.next()) {
-                GroupMember g=new GroupMember(rs.getString(1),rs.getString(2));
+                GroupMember g=new GroupMember(rs.getString(2),rs.getString(3));
                 lu.add(g);
             }
         } catch (SQLException e) {

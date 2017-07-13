@@ -30,6 +30,7 @@ public class SendRequestThread implements Runnable {
         while (true) {
             try {
                 Request request = holder.getRequest();
+                System.err.println(request.toString());
                 ClientTransaction transaction = provider.getNewClientTransaction(request);
                 transaction.sendRequest();
             } catch (InterruptedException e) {

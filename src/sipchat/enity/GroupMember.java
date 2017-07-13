@@ -27,4 +27,12 @@ public class GroupMember {
     public void setMemberName(String memberName) {
         this.memberName = memberName;
     }
+
+    @Override
+    public String toString() {
+        return "GroupMember{" +
+                "groupName='" + groupName + '\'' +
+                ", memberName='" + memberName + '\'' +
+                '}';
+    }
 }
