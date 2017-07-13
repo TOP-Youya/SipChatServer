@@ -31,7 +31,6 @@ public class GroupEvent {
         try {
             pstmt = conn.prepareStatement(sql);
             ResultSet rs = pstmt.executeQuery();
-            int col = rs.getMetaData().getColumnCount();
             while (rs.next()) {
                 GroupMember g=new GroupMember(rs.getString(1),rs.getString(2));
                 lu.add(g);

@@ -175,6 +175,32 @@ public class MessageImpl implements MessageHandler {
         return "false";
     }
 
+    @Override
+    public String onAllFriends() {
+        List<String> list = cacheManager.getAllFriends();
+        String result = "";
+        for(int i = 0;i < list.size();++i) {
+            result += list.get(i);
+            if(i != list.size()) {
+                result += ";";
+            }
+        }
+        return result;
+    }
+
+    @Override
+    public String onAllGroups() {
+        List<String> list = cacheManager.getAllGroups();
+        String result = "";
+        for(int i = 0;i < list.size();++i) {
+            result += list.get(i);
+            if(i != list.size()) {
+                result += ";";
+            }
+        }
+        return result;
+    }
+
 
     private void addRequest(FromHeader fromHeader,List<String> list,String rawMessage) {
         Request request;

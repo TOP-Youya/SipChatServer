@@ -14,4 +14,6 @@ public interface MessageHandler {
     String onExitGroup(FromHeader username, String rawMessage);
     String onCreateGroup(String displayName, String rawMessage);
     String onLogin(String displayName, String rawMessage);
+    String onAllFriends();
+    String onAllGroups();
 }

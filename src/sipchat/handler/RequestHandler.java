@@ -1,6 +1,7 @@
 package sipchat.handler;
 
 
+import sipchat.dao.FriendEvent;
 import sipchat.dao.UserEvent;
 import sipchat.manager.CacheManager;
 import sipchat.manager.HeaderMaker;
@@ -77,7 +78,11 @@ public class RequestHandler {
         String content = new String(request.getRawContent());
         String address = UserEvent.getIpAddress(content);
         FromHeader fromHeader = (FromHeader) request.getHeader(FromHeader.NAME);
+        String owner = fromHeader.getAddress().getDisplayName();
 
+        FriendEvent.addFriend(owner,content);
+        FriendEvent.addFriend(content,owner);
+        cacheManager.setFriendChanged(true);
         sendResponse(request,Response.OK,"");
 
         Request notifyRequest = makeNotifyMessage(fromHeader.getAddress().getURI().toString(),content + "#" + address);
@@ -99,7 +104,7 @@ public class RequestHandler {
             //Make notify message
             //contain address
             for(String each : list) {
-                Request notifyRequest = makeNotifyMessage(each,username);
+                Request notifyRequest = makeNotifyMessage(each,username + "#" + address);
                 holder.addRequest(notifyRequest);
             }
         } else {
@@ -111,8 +116,8 @@ public class RequestHandler {
     public void onMessage(Request request) throws Throwable {
         String content = new String(request.getRawContent());
 
-        String type = content.substring(0,3);
-        String rawMessage = content.substring(3);
+        String type = content.substring(0,4);
+        String rawMessage = content.substring(4);
 
         FromHeader fromHeader = (FromHeader) request.getHeader(FromHeader.NAME);
 
@@ -173,12 +178,22 @@ public class RequestHandler {
                 }
                 break;
             case State.LOGIN:
+                System.err.println(rawMessage);
                 result = messageHandler.onLogin(fromHeader.getAddress().getDisplayName(),rawMessage);
                 if(result.equals("true")) {
                     sendResponse(request,Response.OK,"");
                 } else {
+                    System.err.println("login error");
                     sendResponse(request,Response.FORBIDDEN,"");
                 }
+                break;
+            case State.ALL_FRIEND:
+                result = messageHandler.onAllFriends();
+                sendResponse(request,Response.OK,result);
+                break;
+            case State.ALL_GROUP:
+                result = messageHandler.onAllGroups();
+                sendResponse(request,Response.OK,result);
                 break;
         }
     }

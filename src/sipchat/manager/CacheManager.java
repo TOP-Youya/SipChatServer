@@ -42,6 +42,33 @@ public class CacheManager {
         return cacheManager;
     }
 
+
+    public List<String> getAllFriends() {
+        List<String> result = new ArrayList<>();
+        if(isUserChanged) {
+            users = UserEvent.getAllUser();
+            isUserChanged = !isUserChanged;
+        }
+        for(User each : users) {
+            result.add(each.getUsername());
+        }
+        return result;
+    }
+
+    public List<String> getAllGroups() {
+        List<String> result = new ArrayList<>();
+        if(isGroupMembersChanged) {
+            groupMembers = GroupEvent.getAllGroupMembers();
+            isGroupMembersChanged = !isGroupMembersChanged;
+        }
+        for(GroupMember each : groupMembers) {
+            if(!result.contains(each.getGroupName())) {
+                result.add(each.getMemberName());
+            }
+        }
+        return result;
+    }
+
     public List<String> getFriendList(String owner) {
         List<String> result = new ArrayList<>();
         if(isFriendChanged) {
@@ -139,6 +166,7 @@ public class CacheManager {
         }
         for(User each : users) {
             if(each.getUsername().equals(username)) {
+                System.err.println(each.getPassword() + ":" + password);
                 return each.getPassword().equals(password);
             }
         }
